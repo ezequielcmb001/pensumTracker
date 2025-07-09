@@ -8,6 +8,8 @@ export default function Login({ onLoginSuccess }: { onLoginSuccess: () => void }
             <Text className="text-xl font-bold mb-4">Login</Text>
             <TouchableOpacity onPress={onLoginSuccess} className="bg-blue-500 px-4 py-2 rounded">
                 <Text className="text-white">Enter login</Text>
+                <Text className="text-white">Enter login</Text>
+                <Text className="text-white">Enter login</Text>
             </TouchableOpacity>
         </View>
     </SafeAreaView>
