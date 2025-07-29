@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "superConcho",
-    "slug": "superConcho",
+    "name": "pensumTracker",
+    "slug": "pensumTracker",
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"

@@ -1,5 +1,5 @@
 {
-  "name": "superConcho",
+  "name": "pensumTracker",
   "version": "1.0.0",
   "scripts": {
     "android": "expo start --android",
