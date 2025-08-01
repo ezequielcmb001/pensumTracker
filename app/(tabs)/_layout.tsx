@@ -1,18 +1,42 @@
 import { Tabs } from "expo-router";
-// import { useAuth } from "../libs/useAuth";
+import { Home, History, User } from "lucide-react-native";
 
 export default function TabsLayout() {
-  // const { isLoggedIn } = useAuth();
-
-  // if (!isLoggedIn) {
-  //   return <Redirect href="/(auth)/login" />;
-  // }
-
   return (
-    <Tabs screenOptions={{ headerShown: false }}>
-      <Tabs.Screen name="home" options={{ title: "Inicio" }} />
-      <Tabs.Screen name="history" options={{ title: "Historial" }} />
-      <Tabs.Screen name="profile" options={{ title: "Perfil" }} />
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: "#007aff",
+        tabBarInactiveTintColor: "gray",
+      }}
+    >
+      <Tabs.Screen
+        name="home"
+        options={{
+          title: "Home",
+          tabBarIcon: ({ color, size }) => (
+            <Home stroke={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: "History",
+          tabBarIcon: ({ color, size }) => (
+            <History stroke={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <User stroke={color} size={size} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
